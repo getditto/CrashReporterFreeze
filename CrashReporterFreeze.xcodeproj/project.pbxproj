@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B396E3642A4DB0B000AD7B60 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B396E3472A4DB08D00AD7B60 /* CrashReporter.framework */; };
+		B396E3652A4DB0B000AD7B60 /* CrashReporter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B396E3472A4DB08D00AD7B60 /* CrashReporter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3A0E7DC2A0BD38000AEFE9A /* Crash.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A0E7DB2A0BD38000AEFE9A /* Crash.swift */; };
+		B3D9CA792A0BBF6F005BFA9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D9CA782A0BBF6F005BFA9B /* AppDelegate.m */; };
+		B3D9CA7B2A0BBF6F005BFA9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D9CA7A2A0BBF6F005BFA9B /* Assets.xcassets */; };
+		B3D9CA7E2A0BBF6F005BFA9B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3D9CA7C2A0BBF6F005BFA9B /* MainMenu.xib */; };
+		B3D9CA802A0BBF6F005BFA9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D9CA7F2A0BBF6F005BFA9B /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B396E3462A4DB08D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = "CrashReporter macOS Framework";
+		};
+		B396E3482A4DB08D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32CF777F26DFBB080087748A;
+			remoteInfo = "CrashReporter macOS Static Framework";
+		};
+		B396E34A2A4DB08D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 058812B91040582D009128FB;
+			remoteInfo = "CrashReporter iOS Framework";
+		};
+		B396E34C2A4DB08D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8064D8BB1C4D22E5005A8B4C;
+			remoteInfo = "CrashReporter tvOS Framework";
+		};
+		B396E34E2A4DB08D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 05E731F30EFA1AAB005EDFB7;
+			remoteInfo = "CrashReporter macOS";
+		};
+		B396E3502A4DB08D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 05CD31520EE936A9000FDE88;
+			remoteInfo = "CrashReporter iOS";
+		};
+		B396E3522A4DB08D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8064D81B1C4D22D8005A8B4C;
+			remoteInfo = "CrashReporter tvOS";
+		};
+		B396E3542A4DB08D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 05CD32690EE93DC3000FDE88;
+			remoteInfo = "CrashReporter macOS Tests";
+		};
+		B396E3562A4DB08D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 05CD33240EE94439000FDE88;
+			remoteInfo = "CrashReporter iOS Tests";
+		};
+		B396E3582A4DB08D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8064D9951C4D27E2005A8B4C;
+			remoteInfo = "CrashReporter tvOS Tests";
+		};
+		B396E35A2A4DB08D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 05F40CE70EF7AB80008050CF;
+			remoteInfo = "DemoCrash macOS";
+		};
+		B396E35C2A4DB08D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 052A45CF136353FB00987004;
+			remoteInfo = "DemoCrash iOS";
+		};
+		B396E35E2A4DB08D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8064D9A31C4D27E9005A8B4C;
+			remoteInfo = "DemoCrash tvOS";
+		};
+		B396E3602A4DB08D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 05E731E30EFA1A3E005EDFB7;
+			remoteInfo = plcrashutil;
+		};
+		B396E3622A4DB08D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 050DE24D0F61B80B00152ED3;
+			remoteInfo = "Fuzz Testing";
+		};
+		B396E3662A4DB12D00AD7B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = "CrashReporter macOS Framework";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B3D9CB0C2A0BBFA7005BFA9B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B396E3652A4DB0B000AD7B60 /* CrashReporter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CrashReporter.xcodeproj; path = plcrashreporter/CrashReporter.xcodeproj; sourceTree = "<group>"; };
+		B3A0E7DA2A0BD37F00AEFE9A /* CrashReporterFreeze-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrashReporterFreeze-Bridging-Header.h"; sourceTree = "<group>"; };
+		B3A0E7DB2A0BD38000AEFE9A /* Crash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash.swift; sourceTree = "<group>"; };
+		B3D9CA742A0BBF6F005BFA9B /* CrashReporterFreeze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrashReporterFreeze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D9CA772A0BBF6F005BFA9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3D9CA782A0BBF6F005BFA9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3D9CA7A2A0BBF6F005BFA9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3D9CA7D2A0BBF6F005BFA9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B3D9CA7F2A0BBF6F005BFA9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3D9CA812A0BBF6F005BFA9B /* CrashReporterFreeze.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrashReporterFreeze.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3D9CA712A0BBF6F005BFA9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B396E3642A4DB0B000AD7B60 /* CrashReporter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B396E32F2A4DB08D00AD7B60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B396E3472A4DB08D00AD7B60 /* CrashReporter.framework */,
+				B396E3492A4DB08D00AD7B60 /* CrashReporter.framework */,
+				B396E34B2A4DB08D00AD7B60 /* CrashReporter.framework */,
+				B396E34D2A4DB08D00AD7B60 /* CrashReporter.framework */,
+				B396E34F2A4DB08D00AD7B60 /* libCrashReporter.a */,
+				B396E3512A4DB08D00AD7B60 /* libCrashReporter.a */,
+				B396E3532A4DB08D00AD7B60 /* libCrashReporter.a */,
+				B396E3552A4DB08D00AD7B60 /* Tests macOS.xctest */,
+				B396E3572A4DB08D00AD7B60 /* Tests iOS.xctest */,
+				B396E3592A4DB08D00AD7B60 /* CrashReporter tvOS Tests.xctest */,
+				B396E35B2A4DB08D00AD7B60 /* DemoCrash macOS.app */,
+				B396E35D2A4DB08D00AD7B60 /* DemoCrash iOS.app */,
+				B396E35F2A4DB08D00AD7B60 /* DemoCrash tvOS.app */,
+				B396E3612A4DB08D00AD7B60 /* plcrashutil */,
+				B396E3632A4DB08D00AD7B60 /* Fuzz Testing */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3D9CA6B2A0BBF6F005BFA9B = {
+			isa = PBXGroup;
+			children = (
+				B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */,
+				B3D9CA762A0BBF6F005BFA9B /* CrashReporterFreeze */,
+				B3D9CA752A0BBF6F005BFA9B /* Products */,
+				B3D9CB092A0BBFA7005BFA9B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3D9CA752A0BBF6F005BFA9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3D9CA742A0BBF6F005BFA9B /* CrashReporterFreeze.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3D9CA762A0BBF6F005BFA9B /* CrashReporterFreeze */ = {
+			isa = PBXGroup;
+			children = (
+				B3D9CA772A0BBF6F005BFA9B /* AppDelegate.h */,
+				B3D9CA782A0BBF6F005BFA9B /* AppDelegate.m */,
+				B3D9CA7A2A0BBF6F005BFA9B /* Assets.xcassets */,
+				B3D9CA7C2A0BBF6F005BFA9B /* MainMenu.xib */,
+				B3D9CA7F2A0BBF6F005BFA9B /* main.m */,
+				B3D9CA812A0BBF6F005BFA9B /* CrashReporterFreeze.entitlements */,
+				B3A0E7DB2A0BD38000AEFE9A /* Crash.swift */,
+				B3A0E7DA2A0BD37F00AEFE9A /* CrashReporterFreeze-Bridging-Header.h */,
+			);
+			path = CrashReporterFreeze;
+			sourceTree = "<group>";
+		};
+		B3D9CB092A0BBFA7005BFA9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3D9CA732A0BBF6F005BFA9B /* CrashReporterFreeze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3D9CA842A0BBF6F005BFA9B /* Build configuration list for PBXNativeTarget "CrashReporterFreeze" */;
+			buildPhases = (
+				B3D9CA702A0BBF6F005BFA9B /* Sources */,
+				B3D9CA712A0BBF6F005BFA9B /* Frameworks */,
+				B3D9CA722A0BBF6F005BFA9B /* Resources */,
+				B3D9CB0C2A0BBFA7005BFA9B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B396E3672A4DB12D00AD7B60 /* PBXTargetDependency */,
+			);
+			name = CrashReporterFreeze;
+			productName = CrashReporterFreeze;
+			productReference = B3D9CA742A0BBF6F005BFA9B /* CrashReporterFreeze.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3D9CA6C2A0BBF6F005BFA9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B3D9CA732A0BBF6F005BFA9B = {
+						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
+					};
+				};
+			};
+			buildConfigurationList = B3D9CA6F2A0BBF6F005BFA9B /* Build configuration list for PBXProject "CrashReporterFreeze" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3D9CA6B2A0BBF6F005BFA9B;
+			productRefGroup = B3D9CA752A0BBF6F005BFA9B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B396E32F2A4DB08D00AD7B60 /* Products */;
+					ProjectRef = B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B3D9CA732A0BBF6F005BFA9B /* CrashReporterFreeze */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B396E3472A4DB08D00AD7B60 /* CrashReporter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CrashReporter.framework;
+			remoteRef = B396E3462A4DB08D00AD7B60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B396E3492A4DB08D00AD7B60 /* CrashReporter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CrashReporter.framework;
+			remoteRef = B396E3482A4DB08D00AD7B60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B396E34B2A4DB08D00AD7B60 /* CrashReporter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CrashReporter.framework;
+			remoteRef = B396E34A2A4DB08D00AD7B60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B396E34D2A4DB08D00AD7B60 /* CrashReporter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CrashReporter.framework;
+			remoteRef = B396E34C2A4DB08D00AD7B60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B396E34F2A4DB08D00AD7B60 /* libCrashReporter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCrashReporter.a;
+			remoteRef = B396E34E2A4DB08D00AD7B60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B396E3512A4DB08D00AD7B60 /* libCrashReporter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCrashReporter.a;
+			remoteRef = B396E3502A4DB08D00AD7B60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B396E3532A4DB08D00AD7B60 /* libCrashReporter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCrashReporter.a;
+			remoteRef = B396E3522A4DB08D00AD7B60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B396E3552A4DB08D00AD7B60 /* Tests macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Tests macOS.xctest";
+			remoteRef = B396E3542A4DB08D00AD7B60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B396E3572A4DB08D00AD7B60 /* Tests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Tests iOS.xctest";
+			remoteRef = B396E3562A4DB08D00AD7B60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B396E3592A4DB08D00AD7B60 /* CrashReporter tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CrashReporter tvOS Tests.xctest";
+			remoteRef = B396E3582A4DB08D00AD7B60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B396E35B2A4DB08D00AD7B60 /* DemoCrash macOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "DemoCrash macOS.app";
+			remoteRef = B396E35A2A4DB08D00AD7B60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B396E35D2A4DB08D00AD7B60 /* DemoCrash iOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "DemoCrash iOS.app";
+			remoteRef = B396E35C2A4DB08D00AD7B60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B396E35F2A4DB08D00AD7B60 /* DemoCrash tvOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "DemoCrash tvOS.app";
+			remoteRef = B396E35E2A4DB08D00AD7B60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B396E3612A4DB08D00AD7B60 /* plcrashutil */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = plcrashutil;
+			remoteRef = B396E3602A4DB08D00AD7B60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B396E3632A4DB08D00AD7B60 /* Fuzz Testing */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "Fuzz Testing";
+			remoteRef = B396E3622A4DB08D00AD7B60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3D9CA722A0BBF6F005BFA9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3D9CA7B2A0BBF6F005BFA9B /* Assets.xcassets in Resources */,
+				B3D9CA7E2A0BBF6F005BFA9B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3D9CA702A0BBF6F005BFA9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3D9CA802A0BBF6F005BFA9B /* main.m in Sources */,
+				B3A0E7DC2A0BD38000AEFE9A /* Crash.swift in Sources */,
+				B3D9CA792A0BBF6F005BFA9B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B396E3672A4DB12D00AD7B60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CrashReporter macOS Framework";
+			targetProxy = B396E3662A4DB12D00AD7B60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3D9CA7C2A0BBF6F005BFA9B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3D9CA7D2A0BBF6F005BFA9B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3D9CA822A0BBF6F005BFA9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = x86_64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B3D9CA832A0BBF6F005BFA9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = x86_64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B3D9CA852A0BBF6F005BFA9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CrashReporterFreeze/CrashReporterFreeze.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3T2VMFZPPQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/../Debug-macosx";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = live.ditto.CrashReporterFreeze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CrashReporterFreeze/CrashReporterFreeze-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B3D9CA862A0BBF6F005BFA9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CrashReporterFreeze/CrashReporterFreeze.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3T2VMFZPPQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/../Release-macosx";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = live.ditto.CrashReporterFreeze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CrashReporterFreeze/CrashReporterFreeze-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3D9CA6F2A0BBF6F005BFA9B /* Build configuration list for PBXProject "CrashReporterFreeze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3D9CA822A0BBF6F005BFA9B /* Debug */,
+				B3D9CA832A0BBF6F005BFA9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3D9CA842A0BBF6F005BFA9B /* Build configuration list for PBXNativeTarget "CrashReporterFreeze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3D9CA852A0BBF6F005BFA9B /* Debug */,
+				B3D9CA862A0BBF6F005BFA9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3D9CA6C2A0BBF6F005BFA9B /* Project object */;
+}

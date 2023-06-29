@@ -1,0 +1,32 @@
+
+# Created by dotnet code formatter
+# ignore C-tags files
+# macOS
+**/*.org
+**/.env
+**/Chart.lock
+**/charts/*.tgz
+**/nohup.out
+**/tags
+*.DS_Store
+*.framework/
+*.iml
+*.suo
+*.swp
+*.xcuserdatad/
+.DS_Store
+.direnv
+.gradle
+.idea
+.rubygems/
+.sln.DotSettings.user
+.vs/
+.vscode
+/.idea/*
+/result
+/result-bin
+DEPENDENCY_LICENSES*
+Snap.*.trc
+bacon.toml
+bin/
+dist/
