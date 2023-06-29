@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B396E3642A4DB0B000AD7B60 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B396E3472A4DB08D00AD7B60 /* CrashReporter.framework */; };
 		B396E3652A4DB0B000AD7B60 /* CrashReporter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B396E3472A4DB08D00AD7B60 /* CrashReporter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B396E3BF2A4DFACC00AD7B60 /* DittoObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B396E3AA2A4DFAC000AD7B60 /* DittoObjC.framework */; };
+		B396E3C02A4DFACC00AD7B60 /* DittoObjC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B396E3AA2A4DFAC000AD7B60 /* DittoObjC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3A0E7DC2A0BD38000AEFE9A /* Crash.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A0E7DB2A0BD38000AEFE9A /* Crash.swift */; };
 		B3D9CA792A0BBF6F005BFA9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D9CA782A0BBF6F005BFA9B /* AppDelegate.m */; };
 		B3D9CA7B2A0BBF6F005BFA9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D9CA7A2A0BBF6F005BFA9B /* Assets.xcassets */; };
@@ -139,6 +141,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				B396E3652A4DB0B000AD7B60 /* CrashReporter.framework in Embed Frameworks */,
+				B396E3C02A4DFACC00AD7B60 /* DittoObjC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +150,7 @@
 
 /* Begin PBXFileReference section */
 		B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CrashReporter.xcodeproj; path = plcrashreporter/CrashReporter.xcodeproj; sourceTree = "<group>"; };
+		B396E3AA2A4DFAC000AD7B60 /* DittoObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DittoObjC.framework; sourceTree = "<group>"; };
 		B3A0E7DA2A0BD37F00AEFE9A /* CrashReporterFreeze-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrashReporterFreeze-Bridging-Header.h"; sourceTree = "<group>"; };
 		B3A0E7DB2A0BD38000AEFE9A /* Crash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash.swift; sourceTree = "<group>"; };
 		B3D9CA742A0BBF6F005BFA9B /* CrashReporterFreeze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrashReporterFreeze.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B396E3642A4DB0B000AD7B60 /* CrashReporter.framework in Frameworks */,
+				B396E3BF2A4DFACC00AD7B60 /* DittoObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +200,7 @@
 		B3D9CA6B2A0BBF6F005BFA9B = {
 			isa = PBXGroup;
 			children = (
+				B396E3AA2A4DFAC000AD7B60 /* DittoObjC.framework */,
 				B396E32E2A4DB08D00AD7B60 /* CrashReporter.xcodeproj */,
 				B3D9CA762A0BBF6F005BFA9B /* CrashReporterFreeze */,
 				B3D9CA752A0BBF6F005BFA9B /* Products */,
@@ -482,7 +488,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				EXCLUDED_ARCHS = x86_64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -541,7 +546,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXCLUDED_ARCHS = x86_64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -569,7 +573,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3T2VMFZPPQ;
 				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/../Debug-macosx";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(TARGET_BUILD_DIR)/../Debug-macosx",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -579,6 +587,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					DittoObjC,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = live.ditto.CrashReporterFreeze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -600,7 +612,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3T2VMFZPPQ;
 				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/../Release-macosx";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(TARGET_BUILD_DIR)/../Release-macosx",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -610,6 +626,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					DittoObjC,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = live.ditto.CrashReporterFreeze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

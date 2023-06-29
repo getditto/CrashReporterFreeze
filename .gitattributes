@@ -61,5 +61,7 @@
 *.pch filter=lfs diff=lfs merge=lfs -text
 *.strings filter=lfs diff=lfs merge=lfs -text
 *.rtf filter=lfs diff=lfs merge=lfs -text
+/DittoObjC.framework/Versions/A/DittoObjC filter=lfs diff=lfs merge=lfs -text
+/DittoObjC.framework/Versions/A/_CodeSignature/CodeResources filter=lfs diff=lfs merge=lfs -text
 * !text !filter !merge !diff
 DittoObjC.framework/Versions/A/DittoObjC filter=lfs diff=lfs merge=lfs -text

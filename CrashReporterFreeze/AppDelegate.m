@@ -7,13 +7,19 @@
 
 #import "AppDelegate.h"
 
+#import <DittoObjC/DittoObjC.h>
 #import <CrashReporter/CrashReporter.h>
 #import <Foundation/Foundation.h>
 
 @interface AppDelegate ()
 
+@property (strong) DITDitto* ditto;
 @property (strong) PLCrashReporter *crashReporter;
 @property (strong) IBOutlet NSWindow *window;
+
+@end
+
+@interface AppDelegate (SwiftAPI)
 
 - (void)crashInSwiftLand;
 
@@ -37,6 +43,11 @@
     if (![self.crashReporter enableCrashReporterAndReturnError:&error]) {
         NSLog(@"❤️ [ERROR] Failed to enable crash reporter due to error: %@", error);
     }
+
+    DITIdentity *const identity = [[DITIdentity alloc] initOnlinePlaygroundWithAppID:@"2aaba4c6-c49b-48b6-8452-e99adbb13b77"token:@"a114ff5b-8bf9-4ffc-bcc4-eccd7d80622c"];
+    self.ditto = [[DITDitto alloc] initWithIdentity:identity];
+
+    NSLog(@"💚 [DEBUG] Created Ditto: %@", self.ditto);
 }
 
 

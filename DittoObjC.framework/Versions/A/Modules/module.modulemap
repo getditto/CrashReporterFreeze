@@ -1,0 +1,48 @@
+framework module DittoObjC {
+    umbrella header "DittoObjC.h"
+
+    export *
+    module * { export * }
+
+    explicit module Private {
+        header "_DITDocumentHandleWrapper.h"
+        header "_DITTransportConditionHelpers.h"
+        header "DITAddress+Private.h"
+        header "DITAttachment+Private.h"
+        header "DITAttachmentToken+Private.h"
+        header "DITAuthenticationStatus+Private.h"
+        header "DITAuthenticator+Private.h"
+        header "DITCollection+Private.h"
+        header "DITConnection+Private.h"
+        header "DITCounter+Private.h"
+        header "DITDiskUsage+Private.h"
+        header "DITDitto+Private.h"
+        header "DITDocument+Private.h"
+        header "DITDocumentID+Private.h"
+        header "DITDocumentIDPath+Private.h"
+        header "DITDocumentPath+Private.h"
+        header "DITIdentity+Private.h"
+        header "DITLogger+Private.h"
+        header "DITMutableCounter+Private.h"
+        header "DITMutableDocument+Private.h"
+        header "DITMutableDocumentPath+Private.h"
+        header "DITMutableRegister+Private.h"
+        header "DITPeer+Private.h"
+        header "DITPendingCursorOperation+Private.h"
+        header "DITPendingIDSpecificOperation+Private.h"
+        header "DITPresence+Private.h"
+        header "DITPresenceGraph+Private.h"
+        header "DITRegister+Private.h"
+        header "DITRGA+Private.h"
+        header "DITScopedWriteTransaction+Private.h"
+        header "DITUpdateResult+Private.h"
+        header "DITWriteTransactionPendingCursorOperation+Private.h"
+        header "DITWriteTransactionPendingIDSpecificOperation+Private.h"
+    }
+
+    explicit module DittoFFI {
+        private header "dittoffi.h"
+        link "dittoffi"
+        export *
+    }
+}

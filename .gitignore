@@ -9,7 +9,6 @@
 **/nohup.out
 **/tags
 *.DS_Store
-*.framework/
 *.iml
 *.suo
 *.swp
