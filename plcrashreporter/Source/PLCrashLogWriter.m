@@ -1340,7 +1340,7 @@ plcrash_error_t plcrash_log_writer_write (plcrash_log_writer_t *writer,
                                           writer->process_info.parent_process_id, writer->process_info.native,
                                           writer->process_info.start_time);
     }
-    
+
     /* Threads */
     uint32_t thread_number = 0;
     for (mach_msg_type_number_t i = 0; i < thread_count; i++) {
@@ -1348,6 +1348,8 @@ plcrash_error_t plcrash_log_writer_write (plcrash_log_writer_t *writer,
         plcrash_async_thread_state_t *thr_ctx = NULL;
         bool crashed = false;
         uint32_t size;
+
+        NSLog(@"💗 [TRACE] %s() - CHECKPOINT 1 - Thread %i of %i", __FUNCTION__, i, thread_count - 1);
 
         /* If executing on the target thread, we need to a valid context to walk */
         if (pl_mach_thread_self() == thread) {
@@ -1357,7 +1359,9 @@ plcrash_error_t plcrash_log_writer_write (plcrash_log_writer_t *writer,
         
             thr_ctx = current_state;
         }
-        
+
+        NSLog(@"💗 [TRACE] %s() - CHECKPOINT 2 - Thread %i of %i", __FUNCTION__, i, thread_count - 1);
+
         /* Check if this is the crashed thread */
         if (crashed_thread == thread) {
             crashed = true;
@@ -1366,9 +1370,13 @@ plcrash_error_t plcrash_log_writer_write (plcrash_log_writer_t *writer,
         /* Determine the size */
         size = (uint32_t) plcrash_writer_write_thread(NULL, writer, mach_task_self(), thread, thread_number, thr_ctx, image_list, &findContext, crashed);
 
+        NSLog(@"💗 [TRACE] %s() - CHECKPOINT 3 - Thread %i of %i", __FUNCTION__, i, thread_count - 1);
+
         /* Write message */
         plcrash_writer_pack(file, PLCRASH_PROTO_THREADS_ID, PLPROTOBUF_C_TYPE_MESSAGE, &size);
         plcrash_writer_write_thread(file, writer, mach_task_self(), thread, thread_number, thr_ctx, image_list, &findContext, crashed);
+
+        NSLog(@"💗 [TRACE] %s() - CHECKPOINT 4 - Thread %i of %i", __FUNCTION__, i, thread_count - 1);
 
         thread_number++;
     }
